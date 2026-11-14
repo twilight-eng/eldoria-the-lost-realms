@@ -1,19 +1,14 @@
-# eldoria-the-lost-realms
+# ELDORIA: THE LOST REALMS
 
-<!-- omgithub:readme:start -->
-## 🚀 Build, play, and remix with OMGithub
+A fresh, browser-playable third-person fantasy RPG prototype. Serve this directory over HTTP (for example, `python3 -m http.server 8000`) and open `http://localhost:8000`. The game loads Three.js from jsDelivr, so an internet connection is required.
 
-**Remixed using [OMGithub.com](https://go.ondev.store/).**
+## Controls
 
-[![OMGithub](https://img.shields.io/badge/OMGithub-Open%20project-orange?style=for-the-badge)](https://go.ondev.store/twilight-eng/eldoria-the-lost-realms)
-[![GitHub](https://img.shields.io/badge/GitHub-Source-181717?logo=github&style=for-the-badge)](https://github.com/twilight-eng/eldoria-the-lost-realms)
+- **PC:** WASD/arrows move; drag the mouse to orbit; left click attacks; right mouse button or Q guards; Space jumps; Shift dodges; E interacts; Esc opens the journal.
+- **Touch:** fixed left-side joystick moves; drag the right side to look; on-screen buttons jump, strike, guard, dodge and interact. Portrait and landscape layouts are supported.
 
-- 🎮 [Open the project](https://go.ondev.store/twilight-eng/eldoria-the-lost-realms).
-- ✨ [Remix this project](https://go.ondev.store/twilight-eng/eldoria-the-lost-realms?remix=1).
-- 💻 [Explore the source](https://github.com/twilight-eng/eldoria-the-lost-realms).
-- 🛠️ [Check build runs](https://github.com/twilight-eng/eldoria-the-lost-realms/actions).
-- 🐛 [Report an issue](https://github.com/twilight-eng/eldoria-the-lost-realms/issues).
-- 👤 [Explore the creator's projects](https://go.ondev.store/twilight-eng).
-- 🌍 [Create with OMGithub](https://go.ondev.store/).
-- 🧬 [Explore the remix source](https://github.com/twilight-eng/eldoria-the-lost-realms).
-<!-- omgithub:readme:end -->
+Explore the vale, activate the glowing waystone, fight roaming sentinels, gather drops and save/load progress from the journal.
+
+## Scope and limitations
+
+This is a playable prototype built from procedural Three.js geometry and locally implemented gameplay. The character uses a custom articulated mesh with procedural movement poses, not motion-captured animation. Terrain collisions, gravity, jumping, enemy pursuit/knockback and movement are implemented in game logic; there is no general rigid-body physics engine, physical mass/friction simulation, or water-body interaction. Water is a translucent animated-looking surface with ripples, not a reflection-rendered fluid simulation. Lighting, fog, wind-swaying vegetation and a simple daylight shift are present; there are no detailed imported PBR texture assets, dynamic clouds, rain system, full quest/dialogue framework, or native Android package. Mobile play is through the responsive browser interface.

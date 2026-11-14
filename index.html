@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#111713">
+<title>Eldoria: The Lost Realms</title><link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"}}</script>
+</head><body><main id="game"><div id="scene"></div>
+<header class="topbar"><div class="brand"><span class="sigil">✦</span><div><b>ELDORIA</b><small>THE LOST REALMS</small></div></div><div class="location"><i></i> THE ASHEN VALE <span>·</span> DAWN</div><button id="menuBtn" class="iconbtn" aria-label="Open menu">Ⅱ</button></header>
+<section class="hud"><div class="player-card"><div class="portrait">✧</div><div class="vitals"><div class="vital-label"><span>VITALITY</span><b id="hpText">100 / 100</b></div><div class="bar"><i id="hpBar"></i></div><div class="vital-label stamina-label"><span>STAMINA</span><b id="stText">100 / 100</b></div><div class="bar stamina"><i id="stBar"></i></div></div></div><div class="quest"><span class="quest-kicker">✧ &nbsp;JOURNAL UPDATED</span><b id="questTitle">A Light in the Ruins</b><span id="questSub">Find the old waystone · 84m</span></div></section>
+<div class="compass"><span>N</span><div class="compass-line"></div><span class="compass-mark">◆</span><span>E</span></div>
+<div id="toast" class="toast">The valley remembers.</div><div id="interactHint" class="interact-hint">E &nbsp; LISTEN</div>
+<div class="bottom-left"><div class="weather"><span>☀</span><div><b>12°</b><small>LIGHT BREEZE</small></div></div><div class="coords">DAY 01 &nbsp; · &nbsp; 06:24</div></div>
+<div class="bottom-right"><div class="weapon"><span>⚔</span><div><small>EQUIPPED</small><b>Wayfarer’s steel</b></div><kbd>1</kbd></div></div>
+<div id="touchUI"><div id="stick" class="stick"><div class="stick-ring"><div id="stickKnob"></div></div></div><div class="touch-actions"><button data-action="interact" class="action interact"><span>◈</span><small>USE</small></button><button data-action="guard" class="action guard"><span>⬟</span><small>GUARD</small></button><button data-action="attack" class="action attack"><span>⚔</span><small>STRIKE</small></button><button data-action="dodge" class="action dodge"><span>➤</span><small>DODGE</small></button><button data-action="jump" class="action jump"><span>↑</span><small>JUMP</small></button></div><div id="lookZone" class="look-zone"><span>DRAG TO LOOK</span></div></div>
+<div id="modal" class="modal hidden"><div class="modal-card"><button id="closeModal" class="close">×</button><span class="eyebrow">THE WAYFARER’S JOURNAL</span><h1 id="modalTitle">The Ashen Vale</h1><p id="modalBody">A land between memory and mist. Seek the old waystone beyond the river.</p><div class="menu-grid"><button id="saveBtn">SAVE JOURNEY <small id="saveLabel">No save found</small></button><button id="inventoryBtn">INVENTORY <small>3 gathered resources</small></button><button id="qualityBtn">GRAPHICS <small>Adaptive · balanced</small></button></div></div></div>
+</main><script type="module" src="game.js"></script></body></html>
